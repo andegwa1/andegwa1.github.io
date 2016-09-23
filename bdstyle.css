@@ -1,0 +1,11 @@
+html{
+    background-color: skyblue;
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, fantasy;
+}
+
+h1{
+    color: purple;
+    text-shadow: 2px 2px #ff0000;    
+}
+
