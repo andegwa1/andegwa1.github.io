@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Al's Checkers Game</title>   
+    </head>
+    
+    <body>
+        
+        
+        <script>       
+                             
+         //  function Board(){ 
+               
+               var str = "";      
+               
+               function createBoard(){            
+                var board = document.createElement('canvas');
+                board.width = board.height = 600;
+                
+                var cell = board.getContext('2d');
+                for (var x = 0; x < 8; x++) for (var y = 0; y < 8; y++) {
+                    cell.fillStyle = (x + y) % 2 ? 'red' : 'black';
+                    cell.fillRect(60 * x, 60 * y, 60, 60)
+                    
+                }
+               document.body.appendChild(board);               
+                //<img src="prac/me1.gif" style="width:60px">   
+                //var gp = document.write("<img //src='http://tucano.tucanowebdesign.com/jscript/gr/me1.gif'> ");
+                   function createPiece (){
+                       for(i = 0; i < 10; i++){
+                           var crate_img = document.createElement("IMG");
+                           crate_img.setAttribute("src",
+                            "http://tucano.tucanowebdesign.com/jscript/gr/me1.gif");
+                           document.getElementById("bp").appendChild(crate_img);
+                       
+            }
+                   }
+               }
+            
+            
+            
+            
+                function createPiece(){
+                
+                
+                
+               
+                
+                }
+            
+            
+                function movePiece(){
+                    $piece.css('top','newTop');
+                    $piece.css('left','newLeft');                
+                }
+            
+            
+                function takePiece(){
+                
+                }
+            
+                function winConditon(){
+                
+                }
+               
+         //  }<img src="prac/me1.gif" style="width:60px">
+            
+        </script>
+        
+        <div id="board"> 
+            <button onClick="createBoard();">Start Game</button> 
+            <img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px">
+            <img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px">
+            <img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px">
+            <img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px"><br>
+            <img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px">
+            <img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px">
+            <img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px"><img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px"><br>
+            <img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px">
+            <img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px">
+            <img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px">
+            <img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px">
+            <img src="http://tucano.tucanowebdesign.com/jscript/gr/me1.gif" style="width:60px">
+        
+            <br>
+            <br>
+            <img src="http://geraldconde.me/checkers_doc/html/dark_piece.png" style="width:60px">
+            <img src="http://geraldconde.me/checkers_doc/html/dark_piece.png" style="width:60px">
+            <img src="http://geraldconde.me/checkers_doc/html/dark_piece.png" style="width:60px">
+            <img src="http://geraldconde.me/checkers_doc/html/dark_piece.png" style="width:60px"><br>
+            <img src="http://geraldconde.me/checkers_doc/html/dark_piece.png" style="width:60px">
+            <img src="http://geraldconde.me/checkers_doc/html/dark_piece.png" style="width:60px">
+            <img src="http://geraldconde.me/checkers_doc/html/dark_piece.png" style="width:60px">
+            <img src="http://geraldconde.me/checkers_doc/html/dark_piece.png" style="width:60px"><br>
+            <img src="http://geraldconde.me/checkers_doc/html/dark_piece.png" style="width:60px"><img src="http://geraldconde.me/checkers_doc/html/dark_piece.png" style="width:60px">
+            <img src="http://geraldconde.me/checkers_doc/html/dark_piece.png" style="width:60px">
+            <img src="http://geraldconde.me/checkers_doc/html/dark_piece.png" style="width:60px">
+            
+        </div> 
+        
+        <div id="game">
+            <div id="board">      
+            </div>
+            
+            <div id="pieces">
+            </div>
+        
+        </div>
+
+        <div id="bp"></div>
+        
+        
+        
+    
+    </body>
+
+
+
+</html>
